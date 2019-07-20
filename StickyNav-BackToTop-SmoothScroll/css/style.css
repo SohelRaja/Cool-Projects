@@ -1,0 +1,38 @@
+header{
+    background: #444;
+}
+header .navbar .navbar-brand{
+    color: #fff;
+}
+header .navbar .navbar-nav .nav-item .nav-link{
+    color:#fff;
+}
+.blank{
+    margin-top: 3000px;
+    font-size: 50px;
+    text-align: center;
+}
+header.sticky{
+    background:#444;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    transition: 0.5s;
+    z-index: 99;
+    animation: stickyAnimation 1s;
+}
+
+@keyframes stickyAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: .8;
+        transform: translateY(0);
+    }
+}
+section{
+    padding-bottom: 170px;
+}
